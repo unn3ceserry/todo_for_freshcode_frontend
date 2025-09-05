@@ -1,0 +1,40 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin align-justify-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  @include flex-column;
+  @include align-justify-center;
+  align-items: start;
+  position: relative;
+
+  background-color: var(--pattern-background-color);
+  border: 1px solid var(--pattern-border-color);
+  border-radius: .5rem;
+  max-width: 1300px;
+  padding: 1rem;
+  gap: 1rem;
+
+  > div {
+    width: 100%;
+  }
+
+  > button {
+    width: 100%;
+  }
+}
+
+.wrapper_title {
+  @include flex-column;
+  gap: .5rem;
+
+  > h4 {
+    color: var(--text-color);
+  }
+}

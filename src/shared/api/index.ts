@@ -1,0 +1,1 @@
+export {globalApiUrl, globalApi} from './api'

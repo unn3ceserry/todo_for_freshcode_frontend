@@ -1,0 +1,47 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+@mixin align-justify-center {
+  align-items: center;
+  justify-content: center;
+}
+
+
+.wrapper_input {
+  @include flex-row;
+  @include align-justify-center;
+  background-color: var(--pattern-background-color);
+  border: 1px solid var(--pattern-border-color);
+  color: var(--text-color);
+  border-radius: 6px;
+  padding: 0.6rem;
+  width: 100%;
+
+  box-sizing: border-box;
+  transition: border .3s ease-in-out;
+}
+
+.wrapper_input:focus-within {
+  border: 1px solid color-mix(in srgb, var(--accent-color) 50%, transparent);
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+input::placeholder {
+  color: color-mix(in srgb, var(--text-color) 50%, transparent);
+}

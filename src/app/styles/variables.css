@@ -1,0 +1,14 @@
+:root {
+  --ff-main: 'Poppins', sans-serif;
+  --accent-color: #5e4aa6;
+  --background-color: color-mix(in srgb, var(--accent-color) 8%, #000000);
+  --pattern-background-color: color-mix(in srgb, var(--accent-color) 1%, transparent);
+  --pattern-border-color: color-mix(in srgb, var(--accent-color) 8%, #ffffff01);
+  --text-color: color-mix(in srgb, var(--accent-color) 30%, #ffffff);
+  --line-color: color-mix(in srgb, var(--accent-color) 3%, #ffffff01);
+  --background-slider-color: color-mix(in srgb, var(--accent-color) 10%, #ffffff01);
+  --background-thumb-color: color-mix(in srgb, var(--accent-color) 15%, #ffffff01);
+  --btn-color: color-mix(in srgb, var(--accent-color) 65%, #00000000);
+  --btn-border-color: color-mix(in srgb, var(--accent-color) 75%, #000000);
+  --btn-gradient-color: linear-gradient(180deg, var(--accent-color), color-mix(in srgb, var(--accent-color) 45%, transparent));
+}
